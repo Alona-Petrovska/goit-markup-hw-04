@@ -1,6 +1,7 @@
 :root {
     --brand-color: #4D5AE5;
     --mian-color: #2E2F42;
+    --light-slate: #8E8F99;
     --text-color: #434455;
     --main-background-color: #FFFFFF;
     --background-light-color: #F4F4FD;
@@ -151,7 +152,7 @@ p {
     padding-top: 192px;
     padding-bottom: 192px;
 
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/people-office.png);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/people-office.jpg);
     background-repeat: no-repeat;
     
     background-position: center;
@@ -207,7 +208,17 @@ p {
     display: flex;
     gap: 24px;
 }
-
+.features-box{
+background-color: var(--background-light-color);
+padding: 24px 100px;
+margin-bottom: 8px;
+}
+.picture{
+    width: 64px;
+    height: 64px;
+    /* padding: 24px 100px; */
+    /* background-color:var(--background-light-color); */
+}
 .features-list .item {
     min-width: 264px;
 }
@@ -272,6 +283,45 @@ flex-direction: column;
 background-color: var(--main-background-color);
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 border-radius: 0px 0px 4px 4px;
+}
+
+.customers-section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.customers-section .section-tittle{
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+.customers-list{
+    display: flex;
+    gap: 24px;
+    text-align: center;
+}
+.box-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 168px;
+    height: 88px;
+}
+.icon-link{
+    fill: var(--light-slate);  
+    padding: 16px 32px;
+
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+}
+.icon-link:hover,
+.icon-link:focus{
+    fill: #404BBF;
+    border-color: #404BBF;
+    
+}
+.icon{
+    width: 104px;
+    height: 56px;
 }
 
 .footer {
