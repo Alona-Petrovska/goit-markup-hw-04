@@ -6,6 +6,7 @@
     --main-background-color: #FFFFFF;
     --background-light-color: #F4F4FD;
     --accent-color: #E7E9FC;
+    --success:#31D0AA;
 
 }
 
@@ -384,7 +385,7 @@ border-radius: 0px 0px 4px 4px;
 }
 .footer-link:hover,
 .footer-link:focus{
-    background-color:#31D0AA;
+    background-color:var(--success);
 }
 .btn {
     font-family: 'Roboto', sans-serif;
